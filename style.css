@@ -85,7 +85,7 @@ img {
 
 .hero {
     width: 100%;
-    height: 500px;
+    height: 700px;
     border: 3px solid #e4b13a;
 }
 
@@ -167,4 +167,157 @@ footer {
 
 footer a {
     color: #e4b13a;
+}
+
+/* ==========================================================
+   INNER PAGES (about.html, shirt1.html, ...)
+   ========================================================== */
+
+nav a.current {
+    background-color: #e4b13a;
+    color: #040316;
+}
+
+.page-intro {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Text + image side by side */
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.split .text {
+    flex: 1 1 380px;
+}
+
+.split .media {
+    flex: 1 1 380px;
+}
+
+.split img,
+.gallery img {
+    display: block;
+    width: 100%;
+    border: 3px solid #e4b13a;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.caption {
+    font-size: 14px;
+    font-style: italic;
+    margin: 6px 0 0 0;
+}
+
+/* Photo gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery figure {
+    flex: 1 1 300px;
+    margin: 0;
+}
+
+.gallery img {
+    height: 520px;
+    object-fit: cover;
+}
+
+/* Quick facts box */
+.facts {
+    background-color: #ffffff;
+    border: 2px solid #4a4e6d;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+.facts p {
+    margin: 10px 0;
+}
+
+/* Steps */
+.steps {
+    background-color: #ffffff;
+    border: 2px solid #4a4e6d;
+    padding: 10px 20px 10px 45px;
+}
+
+.steps li {
+    margin: 12px 0;
+}
+
+/* Table */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 2px solid #4a4e6d;
+}
+
+th {
+    background-color: #4a4e6d;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 14px;
+}
+
+td {
+    padding: 10px 14px;
+    border-top: 1px solid #7d8fa1;
+}
+
+tr:nth-child(even) td {
+    background-color: #f0f2f5;
+}
+
+main a {
+    color: #2c0731;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #c24c50;
+}
+
+main a.button {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.page-nav {
+    margin-top: 40px;
+}
+
+/* Responsive embedded video */
+.video {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border: 3px solid #e4b13a;
+    background-color: #040316;
+    box-sizing: border-box;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
